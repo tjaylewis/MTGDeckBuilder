@@ -1,0 +1,15 @@
+extends layout.pug
+
+block content
+    h1="Please Setup a New Account"
+    form(action="/user/Register", method="Post", class="registerForm")
+        div
+            label="Username: "
+            input(type="text", name="username")
+        div
+            label="Email: "
+            input(type="text", name="email")
+        div
+            label="Password: "
+            input(type="password", name="password")
+        input(type="submit", value="Register")

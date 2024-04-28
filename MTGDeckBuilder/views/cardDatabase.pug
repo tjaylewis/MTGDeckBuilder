@@ -1,0 +1,38 @@
+extends layout.pug
+
+block content
+    div(class="Search")
+        h2=title   
+        form(class="searchForm", action="/data/searchCards" , method="post")
+            input(type="text", placeholder="search cards by name" name="nameFilter")
+            input(type="submit", value="Search")
+    if(foundCards)
+        for card in foundCards
+            div(class="card")
+                span(class="cardDetails")
+                    img(class="cardImage" src=card.imageUri alt=card.name)
+                span(class="cardDetails")
+                    div(class="cardName")="Name: " + card.name
+                    div(class="cardColor")="Color: "
+                        for color, index in card.colors
+                            if(index != card.colors.length - 1)
+                                span=color + ", "
+                            else
+                                span=color
+                    div(class="cmc")="CMC: " + card.cmc
+                    div(class="cardRules")="Rules Text: " + card.rulesText
+                    //- div(class="legalities")="Legalities: "
+                    //-     for legality, index in card.legalities
+                    //-         if(index != card.legalities.length - 1)
+                    //-             span=legality + ", "
+                    //-         else
+                    //-             span=legality
+                    div(class="purchaseUri")
+                        div
+                            a(href=card.purchaseUris.tcgplayer)="Buy it at TCGPlayer!"
+                        div
+                            a(href=card.purchaseUris.cardmarket)="Buy it at CardMarket!"
+                        div
+                            a(href=card.purchaseUris.cardhoarder)="Buy it at CardHoarder!"
+                        
+

@@ -1,0 +1,22 @@
+extends layout
+
+block extraLinks
+    script(src="/scripts/builder.js")
+
+block content
+    h1="Build your deck"
+    if(message)
+        div
+            p(class="error")=message
+    form(id="saveDeckForm", class="saveDeckForm", action="/user/addCardToList" , method="post")
+        label="Deck Name"
+        input(type="text", name="deckName", value=deckName)
+        //- I want these two inputs to be to the left of the of the text area
+        div
+            input(type="text", name="addCard")
+        div
+            input(type="submit", value="Add Card to List")
+    div
+        textarea(name="cardView", rows="60", cols="40", form="saveDeckForm")=cards
+    //- This button should be below the form
+    input(id="saveDeckButton", type="button", value="Save Deck")

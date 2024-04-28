@@ -1,0 +1,24 @@
+html
+    head
+        title="Sorcery the Collection"
+        link(href="/styles/main.css" rel="stylesheet" type="text/css")
+        link(href="https://fonts.googleapis.com/css?family=Inconsolata|Yeon+Sung&display=swap" rel="stylesheet")
+        script(src="/scripts/main.js")
+        block extraLinks
+    body 
+        div(class="MainContainer")
+            header
+                span
+                    h1="Sorcery the Collection"
+                    //- img(class="UserIcon" src="idk better figure it out" alt="some alt we have" href="/")
+                nav
+                    a(href="/")="Home"
+                    a(href="/data/searchCards")="Card Database"
+                    if(username)
+                        a(href="/user/buildDeck")="Build A Deck"
+                        a(href="/user/profile/"+userId)=username
+                        a(href="/user/logout")="Logout"
+                    else
+                        a(href="/user/Register")="Register"
+                        a(href="/user/Login")="Login"
+            block content

@@ -1,0 +1,29 @@
+{
+  "name": "mtgdeckbuilder",
+  "version": "1.0.0",
+  "description": "A deck-builder for Magic: The Gathering.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rshaw02/WBS-Project.git"
+  },
+  "author": "Remington Shaw, Trenton Lewis, Jaime Hervert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rshaw02/WBS-Project/issues"
+  },
+  "homepage": "https://github.com/rshaw02/WBS-Project#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.7.13",
+    "nodemon": "^1.19.4",
+    "pug": "^2.0.4",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

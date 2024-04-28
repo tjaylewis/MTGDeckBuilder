@@ -1,0 +1,126 @@
+/* this is a placeholder */
+/* These are the fonts we are using
+font-family: 'Inconsolata', monospace;
+font-family: 'Yeon Sung', cursive; */
+html {
+    background-color: #191a26;
+    color: #eebd55;
+    font-family: "Sulfur Point", sans-serif;
+    text-align: center;
+    
+}
+
+.header {
+    color: #e33;
+    font-family: "Cinzel", serif;
+}
+
+
+.error {
+    display: inline-block;
+    border: solid 2px #f55;
+    color: #f55;
+    background-color: #711;
+}
+
+.registerForm {
+    display: inline-block;
+    margin: 3% 12%;
+    text-align: center;
+    border: solid 5px #ddd;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+.loginForm {
+    display: inline-block;
+    margin: 3% 12%;
+    text-align: center;
+    border: solid 5px #ddd;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+nav {
+    width:100%;
+    padding: 5px;
+    background: gray;
+    display: flex;
+    margin: auto;
+}
+
+nav a{
+    display: inline-block;
+    margin-right: 10px;
+    margin: auto;
+}
+
+.card {
+    font-family: 'Courgette', cursive;
+    display: block;
+    text-align: center;
+    margin: 5% 26%;
+    clear: right;
+    border: solid 2px #fefecc;
+    color: #eeffcb;;
+    border-radius: 10px;
+    padding: 8% 5% 11% 5%;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.cardImage {
+    margin: 0 auto;
+    float: left;
+    width: 150px;
+    height: 209px;
+    display: block;
+    text-align: center;
+    border: solid 3px #000;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.card:hover {
+    margin: 3% 22%;
+    font-size: 20pt;
+    border-color: #fff;
+}
+
+.cardImage:hover {
+    border: solid 6px #000;
+    border-radius: 20px;
+    width: 220px;
+    height: 307px;
+}
+
+h1{
+    font-size: 200%;
+    letter-spacing: 5px;
+}
+h2{
+    font-size: 150%;
+}
+.Search{
+display: flex;
+width: 45%;
+margin: auto;
+
+
+}
+
+.searchForm{
+    margin: auto;
+}
+
+
+.purchaseUri{
+    float: right;
+
+}
+.memes{
+display: inline-flex;
+float: left;    
+
+}

@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+    h1="Please Login"
+    if(message)
+        div(class="error")=message
+    form(action="/user/Login", method="Post", class="loginForm")
+        div
+            label="Username:"
+            input(type="text", name="username")
+        div
+            label="Password:"
+            input(type="password", name="password")
+        input(type="submit", value="Login")

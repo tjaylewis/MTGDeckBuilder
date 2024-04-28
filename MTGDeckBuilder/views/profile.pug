@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+    h1=title
+    div(class="UserDetails")
+        form(class="userDetailsForm", action="/user/editUsername", method="get")
+            p="Username: " + username
+            input(type="submit", value="Edit")
+        form(class="userDetailsForm", action="/user/editEmail", method="get")
+            p="Email: " + email
+            input(type="submit", value="Edit")
+        form(class="userDetailsForm", action="/user/editPassword", method="get")
+            p="Password: "
+            input(type="submit", value="Edit")
+        form(class="userDeleteForm", action="/user/delete", method="get")
+            p="I dont want this account anymore"
+            input(type="submit", value="Delete Me Pls")
